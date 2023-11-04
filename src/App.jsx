@@ -6,8 +6,6 @@ import { useState } from "react";
 import { EXAMPLES } from "./data.js";
 
 function App() {
-  // let tabContent = "Please click a button";
-
   const [tabContent, setTabContent] = useState();
 
   function handleSelect(selectedButton) {
@@ -15,7 +13,7 @@ function App() {
     console.log(selectedButton);
   }
   return (
-    <div>
+    <>
       <Header></Header>
       <main>
         <section id="core-concepts">
@@ -67,7 +65,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
